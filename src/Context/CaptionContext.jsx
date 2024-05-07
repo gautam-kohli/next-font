@@ -17,7 +17,7 @@ const CaptionProvider = ({ children }) => {
     useEffect(() => {
         const fetchData = () => {
             try {
-                fetch('http://localhost:5000/api/getData')
+                fetch('http://13.232.27.165:5000/api/getData')
                     .then(response => response.json())
                     .then(res => {
                         const { captiondata, biofontdata } = res

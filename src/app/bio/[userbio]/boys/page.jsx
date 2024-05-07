@@ -9,7 +9,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
 
     let subtitle = idSplit[1]
     subtitle = subtitle.replace('%20', ' ')
-    const res = await fetch(`http://localhost:5000/api/getData`)
+    const res = await fetch(`http://13.232.27.165:5000/api/getData`)
     const post = await res.json()
     const data = post.biofontdata
     const particuler = data.find((item) => item.title === paramTitle)

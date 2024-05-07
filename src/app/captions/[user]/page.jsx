@@ -6,7 +6,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
   const replace = idSplit[0].replace('%20', ' ')
   const subtitle = idSplit[1]
   const paramTitle = replace
-  const res = await fetch(`http://localhost:5000/api/getData`)
+  const res = await fetch(`http://13.232.27.165:5000/api/getData`)
   const post = await res.json()
   const data = post.captiondata
 
